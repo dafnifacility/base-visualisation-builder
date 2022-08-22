@@ -1,12 +1,15 @@
-export function checkUserRoleOrRedirect({ redirect, route, store }) {
-  if (
-    store.getters['auth/hasUserRole'] ||
-    route.name === 'details' ||
-    route.name === 'logout'
-  )
-    return
+import { instanceID } from '../../api/backends/'
 
-  redirect('https://facility.secure.dafni.rl.ac.uk/details')
+export function checkUrlOrRedirect({ redirect, route }) {
+  if (route.name !== 'instance-id') {
+    redirect(`instance/${instanceID}`)
+  }
+}
+
+export function checkUserRoleOrRedirect({ redirect, store }) {
+  if (!store.getters['auth/hasUserRole']) {
+    redirect('https://facility.secure.dafni.rl.ac.uk/details')
+  }
 }
 
 export default {
