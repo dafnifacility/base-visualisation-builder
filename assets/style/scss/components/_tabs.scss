@@ -1,0 +1,21 @@
+.v-tabs {
+  margin-left: 1px;
+  &__wrapper {
+    padding: 12px 24px 0;
+  }
+  .v-tab {
+    text-transform: none !important;
+  }
+}
+
+.v-main {
+  .v-tabs {
+    .v-tab--active {
+      color: $color-primary-blue;
+    }
+  }
+  .v-tab {
+    text-transform: none;
+  }
+
+}

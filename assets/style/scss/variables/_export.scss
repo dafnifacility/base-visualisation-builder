@@ -1,0 +1,34 @@
+@import "colours";
+
+:export {
+// Primary 
+
+    primaryDarkBlue: $color-primary-dark-blue;
+    primaryBlue: $color-primary-blue;
+    primaryGreen: $color-primary-green;
+    primaryOrange: $color-primary-orange;
+    primaryPurple: $color-primary-purple;
+    primaryGrey: $color-primary-grey;
+
+    // Secondary
+
+    secondaryDarkBlue: $color-secondary-dark-blue;
+    secondaryBlue: $color-secondary-blue;
+    secondaryGreen: $color-secondary-green;
+    secondaryOrange: $color-secondary-orange;
+    secondaryPurple: $color-secondary-purple;
+    secondaryGrey: $color-secondary-grey;
+
+    // General
+
+    white: $color-white;
+    black: $color-black;
+    red: $color-red;
+    redLight: $color-red-light;
+    grey: $color-grey;
+    greyLight: $color-grey-light;
+
+    greyFadedLight: $color-grey-faded-light;
+    greyFadedDark: $color-grey-faded-dark;
+    purpleLight: $color-purple-light;
+}

@@ -1,0 +1,6 @@
+.gradient {
+  &-purple {
+    color: $color-white;
+    background: linear-gradient(135deg, $color-primary-blue 0%, $color-primary-purple 100%);
+  }
+}

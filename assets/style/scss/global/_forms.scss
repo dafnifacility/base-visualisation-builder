@@ -1,0 +1,65 @@
+.v-label {
+  font-size: 14px !important;
+}
+
+.create {
+  .v-input {
+    width: 200px;
+    border: 1px solid #e0e0e0;
+    border-width: 1px 0 1px 1px;
+    border-radius: 2px 0 0 2px;
+    background-color: #f4f4f4;
+    .v-input__slot {
+      padding-left: 12px;
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+    label,
+    input {
+      font-size: 14px;
+    }
+    .v-icon {
+      &.primary--text {
+        color: $color-grey !important;
+        caret-color: $color-grey !important;
+      }
+    }
+  }
+  .v-btn {
+    height: 34px;
+    border-radius: 0 2px 2px 0;
+    &.theme--dark.v-btn.v-btn--disabled {
+      color: rgba(255,255,255,0.5) !important;
+    }
+    &.theme--dark.v-btn--disabled:not(.v-btn--icon):not(.v-btn--flat):not(.v-btn--outline) {
+      background-color: $color-primary-purple !important;
+    }
+    &.theme--dark.v-btn--disabled .v-btn__loading,
+    &.theme--dark.v-btn.v-btn--disabled .v-icon {
+      color: rgba(255,255,255,1) !important;
+    }
+    &.create--success {
+      &.theme--dark.v-btn--disabled:not(.v-btn--icon):not(.v-btn--flat):not(.v-btn--outline) {
+        background-color: $color-primary-green !important;
+      }
+      span {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.required label::after {
+  content: " *";
+  color: $color-red;
+}

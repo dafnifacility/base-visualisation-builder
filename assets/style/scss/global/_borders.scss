@@ -1,0 +1,16 @@
+.theme--light {
+  .v-sheet {
+    &.border {
+      &-bottom {
+        border-bottom: 1px solid #e0e0e0;
+      }
+      &-none {
+        border: none !important;
+      }
+    }
+  }
+}
+
+.radius {
+  border-radius: 2px;
+}

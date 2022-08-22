@@ -1,0 +1,10 @@
+.theme--light,
+.theme--dark {
+  .v-dialog {
+    box-shadow: none !important;
+    > .v-sheet,
+    .dialog--content .v-sheet.theme--light:first-child {
+      border: 0 !important;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.c {
+  &-white {
+    color: $color-white !important;
+  }
+  &-grey {
+    color: rgba(0, 0, 0, 0.6) !important;
+  }
+  &-grey-light {
+    color: $color-grey-light !important;
+  }
+  &-red {
+    color: $color-red !important;
+  }
+  &-green {
+    color: $color-primary-green !important;
+  }
+  &-orange {
+    color: $color-primary-orange !important;
+  }
+  &-black {
+    color: $color-black !important;
+  }
+  &-blue {
+    color: $color-primary-blue !important;
+  }
+}
+
+.bg {
+  &-white {
+    background-color: $color-white !important;
+  }
+  &-grey {
+    background-color: $color-grey-light !important;
+  }
+  &-green {
+    background-color: $color-primary-green !important;
+  }
+  &-purple {
+    background-color: $color-primary-purple !important;
+  }
+  &-blue {
+    background-color: $color-primary-blue !important;
+  }
+  &-orange {
+    background-color: $color-primary-orange !important;
+  }
+}
+
+.gradient {
+  background: linear-gradient(135deg, $color-primary-blue 0%, $color-primary-purple 100%)
+}

@@ -1,0 +1,6 @@
+{
+  "nivsMinioUrl": "{{env "NIVS_MINIO_URL"}}",
+  "nidMinioUrl": "{{env "NID_MINIO_URL"}}",
+  "node_env": "{{env "NODE_ENV"}}",
+  "instanceID": "{{env "INSTANCE_ID"}}"
+}

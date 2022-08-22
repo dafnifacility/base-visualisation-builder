@@ -1,0 +1,27 @@
+.loading {
+  position: fixed;
+  z-index: 200;
+  top: 50%;
+  left: 50%;
+  margin: -32px 0 0 -32px;
+
+  &.left {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    margin: 0;
+  }
+}
+
+.loadingText {
+  position: fixed;
+  z-index: 200;
+  top: 50%;
+  left: 50%;
+  margin: -32px 0 0 -82px;
+
+  & img {
+    vertical-align: middle;
+    margin-right: 10px
+  }
+}
