@@ -131,3 +131,19 @@ $ npm install
 $ npm run dev
 
 ```
+
+Running this app locally will likely spit out a load of CORS errors, this is because the components are expecting requests from _secure.dafni.rl.ac.uk_ and the local build will be
+sending from _localhost_. This is a security measure built into most browsers, you can configure a browsers to ignore these errors. NOTE - if you do configure a browser to ignore
+these errors then don't use the same browser to access other websites, you are disabling security features of your browser.
+
+For Chrome:
+
+- Create a new shortcut to Chrome
+- Open the Properties of the shortcut
+- In the Target for the shortcut ensure the location is in double quotes and then add to the end ` --disable-web-security --user-data-dir="C:/DevChrome"`
+- It should look something like `"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-web-security --user-data-dir="C:/DevChrome"`
+- `C:/DevChrome` is needed for the disable-web-security flag to work correctly. The folder can be called whatever you want so long as it exists
+- Once the target has been set and the folder has been created follow the instructions below to run the server
+
+We have not got documented fixes for other browsers yet. If you do find a way of disabling CORS in these browsers please create a pull request to add instructions to help other users
+of this repository, thank you!
