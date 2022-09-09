@@ -1,0 +1,10 @@
+.v-navigation-drawer a,
+.v-main a,
+.v-dialog .v-data-table a {
+  color: $color-primary-blue;
+  text-decoration: none;
+  font-weight: 500;
+  &:hover {
+    color: darken($color-primary-blue, 8%);
+  }
+}

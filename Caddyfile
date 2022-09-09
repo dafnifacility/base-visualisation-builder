@@ -1,0 +1,21 @@
+{
+  admin off
+}
+http://:5001
+log
+uri path_regexp /instance/[a-f0-9\-]{36} /
+root * /srv
+file_server {
+  # hide .git dafni.toml Caddyfile vault-secrets README.md
+}
+respond /healthz 204
+@backends {
+  path */backends/backends.json
+  path */backends/keycloak.json
+}
+handle @backends {
+  header Cache-Control public,max-age=10800
+  templates {
+    mime application/json
+  }
+}

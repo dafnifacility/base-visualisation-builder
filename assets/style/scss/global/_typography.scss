@@ -1,0 +1,9 @@
+small {
+  font-size: 12px;
+  color: $color-grey;
+}
+
+:global(.c-white) {
+  background: $color-white;
+  color: $color-grey;
+}

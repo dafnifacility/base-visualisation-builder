@@ -1,0 +1,57 @@
+[autokube]
+disableBackendsPrefix=true
+
+[backends]
+VISUALISATION_API_URL="https://dafni-nivs-api-review-dev-4jxwt5.staging.dafni.rl.ac.uk"
+NID_URL="https://dafni-nid-api-review-dev-4jxwt5.staging.dafni.rl.ac.uk"
+DSS_AUTH="https://dafni-dss-dssauth-review-dev-o2yn5p.staging.dafni.rl.ac.uk"
+NODE_ENV="dev"
+
+KEYCLOAK_ENDPOINT="https://keycloak.staging.dafni.rl.ac.uk/auth/"
+KEYCLOAK_REALM="testrealm"
+KEYCLOAK_CLIENT="dafni-main"
+KEYCLOAK_CLIENT_ALT="dafni"
+
+KEYCLOAK_LOGIN_COOKIE_NAME="dafni"
+KEYCLOAK_LOGIN_COOKIE_DOMAIN=".staging.dafni.rl.ac.uk"
+KEYCLOAK_LOGIN_REDIRECT_CHECK="dafni.rl.ac.uk"
+
+
+[[configset]]
+environment="staging"
+
+  [configset.backends]
+  VISUALISATION_API_URL="https://dafni-nivs-api.staging.dafni.rl.ac.uk"
+  NID_URL="https://dafni-nid-api.staging.dafni.rl.ac.uk"
+  DSS_AUTH="https://dafni-dss-dssauth.staging.dafni.rl.ac.uk"
+  NODE_ENV="production"
+
+  KEYCLOAK_ENDPOINT="https://keycloak.staging.dafni.rl.ac.uk/auth/"
+  KEYCLOAK_REALM="Staging"
+  KEYCLOAK_CLIENT="dafni-main"
+  KEYCLOAK_CLIENT_ALT="dafni"
+
+  KEYCLOAK_LOGIN_COOKIE_NAME="__Secure-dafni"
+  KEYCLOAK_LOGIN_COOKIE_DOMAIN=".staging.dafni.rl.ac.uk"
+  KEYCLOAK_LOGIN_REDIRECT_CHECK="dafni.rl.ac.uk"
+
+[[configset]]
+environment="production"
+
+  [configset.autokube]
+  ingressClass="haproxysecure"
+
+  [configset.backends]
+  VISUALISATION_API_URL="https://dafni-nivs-api.secure.dafni.rl.ac.uk"
+  NID_URL="https://dafni-nid-api.secure.dafni.rl.ac.uk"
+  DSS_AUTH="https://dafni-dss-dssauth.secure.dafni.rl.ac.uk"
+  NODE_ENV="production"
+
+  KEYCLOAK_ENDPOINT="https://keycloak.secure.dafni.rl.ac.uk/auth/"
+  KEYCLOAK_REALM="Production"
+  KEYCLOAK_CLIENT="dafni-main"
+  KEYCLOAK_CLIENT_ALT="dafni"
+
+  KEYCLOAK_LOGIN_COOKIE_NAME="__Secure-dafni"
+  KEYCLOAK_LOGIN_COOKIE_DOMAIN=".secure.dafni.rl.ac.uk"
+  KEYCLOAK_LOGIN_REDIRECT_CHECK="dafni.rl.ac.uk"

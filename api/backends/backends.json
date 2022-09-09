@@ -1,0 +1,6 @@
+{
+  "nivsMinioUrl": "https://fwd.staging.dafni.rl.ac.uk/nivsstore",
+  "nidMinioUrl": "https://fwd.secure.dafni.rl.ac.uk/nidminio",
+  "node_env": "dev",
+  "instanceID": "798c22e4-f74f-420c-bf25-39f2be32a9ac"
+}

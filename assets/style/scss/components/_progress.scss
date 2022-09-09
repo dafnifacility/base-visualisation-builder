@@ -1,0 +1,14 @@
+/* Data table linear progress bar fix as color not owkring */
+.v-data-table {
+  .v-progress-linear {
+    height: 5px !important;
+    &__background {
+      height: 5px !important;
+    }    
+    &__background,
+    &__bar__indeterminate {
+      background-color: $color-primary-blue !important;
+      border-color: $color-primary-blue !important;
+    }
+  }
+}

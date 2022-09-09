@@ -1,0 +1,7 @@
+{
+  "url": "{{env "KEYCLOAK_ENDPOINT"}}",
+  "realm": "{{env "KEYCLOAK_REALM"}}",
+  "clientId": "{{env "KEYCLOAK_CLIENT"}}",
+  "cookieName": "{{env "KEYCLOAK_LOGIN_COOKIE_NAME"}}",
+  "cookieDomain": "{{env "KEYCLOAK_LOGIN_COOKIE_DOMAIN"}}"
+}

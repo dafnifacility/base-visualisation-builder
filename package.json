@@ -1,0 +1,50 @@
+{
+  "name": "base-visualisation-builder",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "export": "nuxt export",
+    "serve": "nuxt serve",
+    "generate": "nuxt generate",
+    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint": "npm run lint:js",
+    "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore ."
+  },
+  "dependencies": {
+    "@dsb-norge/vue-keycloak-js": "^2.1.3-beta",
+    "@nuxtjs/axios": "^5.13.6",
+    "csv-string": "^4.0.1",
+    "js-file-download": "^0.4.12",
+    "lodash": "^4.17.20",
+    "nuxt": "^2.15.8",
+    "vue": "^2.6.14",
+    "vuex-persistedstate": "^4.0.0-beta.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/eslint-parser": "^7.15.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.15.0",
+    "@nuxtjs/eslint-config": "^6.0.1",
+    "@nuxtjs/eslint-module": "^3.0.2",
+    "@nuxtjs/vuetify": "^1.12.1",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-loader": "^4.0.0",
+    "eslint-plugin-import": "^2.24.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "3.4.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "eslint-plugin-vue": "^7.16.0",
+    "eslint-webpack-plugin": "^2.5.4",
+    "prettier": "^2.3.2",
+    "push-dir": "^0.4.1",
+    "sass": "~1.38.0",
+    "webpack": "^4.46.0"
+  }
+}

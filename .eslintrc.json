@@ -1,0 +1,62 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "parserOptions": {
+    "parser": "@babel/eslint-parser"
+  },
+  "extends": [
+    "@nuxtjs",
+    "eslint:recommended",
+    "plugin:vue/recommended",
+    "plugin:prettier/recommended",
+    "eslint-config-prettier",
+    "prettier"
+  ],
+  "plugins": [
+    "vue"
+  ],
+  "ignorePatterns": [
+    "node_modules/"
+  ],
+  // add your custom rules here
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto",
+        "arrowParens": "avoid"
+      }
+    ],
+    "arrow-parens": [
+      0,
+      "as-needed"
+    ],
+    "vue/valid-v-slot": [
+      "error",
+      {
+        "allowModifiers": true
+      }
+    ],
+    "vue/no-mutating-props": 1,
+    "no-console": 0,
+    "sort-imports": [
+      1,
+      {
+        "ignoreCase": true,
+        "ignoreDeclarationSort": false,
+        "ignoreMemberSort": false,
+        "memberSyntaxSortOrder": [
+          "none",
+          "all",
+          "multiple",
+          "single"
+        ]
+      }
+    ],
+    "import/order": 0,
+    "vue/script-setup-uses-vars": 0
+  }
+}
