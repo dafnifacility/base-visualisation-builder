@@ -74,8 +74,7 @@ async function initKeycloak(context) {
  */
 async function getKeycloakSettings(context) {
   let keycloakConfig = {
-    url:
-      context.env.keycloakUrl || 'https://keycloak.secure.dafni.rl.ac.uk/auth/',
+    url: context.env.keycloakUrl || 'https://keycloak.secure.dafni.rl.ac.uk/',
     realm: context.env.keycloakRealm || 'Production',
     clientId: context.env.keycloakClient || 'dafni-main',
   }
