@@ -118,6 +118,7 @@ export default {
    ** See https://nuxtjs.org/api/configuration-build/
    */
   build: {
+    postcss: null,
     extractCSS: process.env.NODE_ENV === 'development',
     publicPath: process.env.NODE_ENV === 'development' ? '/_nuxt' : './_nuxt/',
     extend(config) {
